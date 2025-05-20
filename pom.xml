@@ -30,7 +30,11 @@
         </developer>
     </developers>
 
-
+    <scm>
+        <connection>scm:git:git://github.com/IndiePassFrance/javaSDK.git</connection>
+        <developerConnection>scm:git:ssh://github.com/IndiePassFrance/javaSDK.git</developerConnection>
+        <url>http://github.com/IndiePassFrance/javaSDK/tree/master</url>
+    </scm>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -73,9 +77,6 @@
                         <artifactId>maven-gpg-plugin</artifactId>
                         <version>3.2.7</version>
                         <configuration>
-                            <!-- Optional: specify which key to use -->
-                            <keyname>3C57AA31F894A6B8372410DB5A930BD8685B7357</keyname>
-                            <!-- Prevent gpg from using pinentry programs -->
                             <gpgArguments>
                                 <arg>--pinentry-mode</arg>
                                 <arg>loopback</arg>
